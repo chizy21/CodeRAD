@@ -1,0 +1,117 @@
+/*  Default colors */
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aedb;
+  --font-color-link: #57a6ff;
+  --footer: #34314b;
+  --footer-base: #2e2b45;
+  --contrast: var(var(--font-color-light));
+  --success: #64ecf5;
+  --danger: #ff8b8d;
+  --grad-1: #a1ecff:
+  --grad-2: #7dbcff;
+}
+
+/* Default font styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--font-color-base);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* default button styling */
+.btn {
+  font-weight: 700;
+  min-width: 175px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.63px;
+  transition: 0.4s;
+  height: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);
+}
+
+.btn:not(:disabled):not(.disabled),
+button:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-primary a {
+  color: #fff;
+  background-color: #495fef;
+  border-color: #495fef;
+}
+
+.round-pill {
+  border-radius: 50rem;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
